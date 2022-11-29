@@ -11,32 +11,60 @@
 <body>
 <div class="wrapper">
   <header class="header">
-    <div class="container header-wrapper">
-      <div class="header-top-wrapper">
-        <a class="header-logo">
+    <div class="container header__wrapper">
+      <div class="header__top-wrapper">
+        <a class="header__logo">
           <svg width="122" height="44">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
         </a>
-        <a href="tel:88005555555" class="header-phone">8-800-555-55-55</a>
+        <a href="tel:88005555555" class="header__phone">8-800-555-55-55</a>
       </div>
-      <div class="header-content-wrapper">
-        <div class="header-text-wrapper">
+      <div class="header__content-wrapper">
+        <div class="header__text-wrapper">
           <h3>омск</h3>
-          <div class="header-title-wrapper">
+          <div class="header__title-wrapper">
             <p>Тренажёрный зал<br>Групповые занятия<br>Кардио-зона </p>
             <h2>Фитнес центр</h2>
           </div>
-          <a href="#" class="btn header-btn">Купить абонемент</a>
+          <a href="#" class="btn header__btn">Купить абонемент</a>
         </div>
-        <img class="header-img" src="img/top.jpg" srcset="img/top@2x.jpg 2x" width="500" height="556" alt="Мужчина в тени в костюме супермена">
+        <img class="header__img" src="img/top.jpg" srcset="img/top@2x.jpg 2x" width="500" height="556" alt="Мужчина в тени в костюме супермена">
       </div>
     </div>
   </header>
   <main>
-    <h1 class="visually-hidden">Сайт</h1>
-    <section class="intro">
-      <div class="container">
+    <h1 class="visually-hidden">Сайт фитнес центра Supergym</h1>
+    <section class="about">
+      <div class="container about__wrapper">
+        <div class="about__text-wrapper">
+          <h2>Тренажерный зал</h2>
+          <b>Просторный зал площадью 900 кв/м</b>
+          <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p class="about__on-desktop">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+        <div class="about__img-wrapper">
+          <img class="about__img" src="img/about.jpg" srcset="img/about@2x.jpg 2x" alt="Вид тренажерного зала" width="660" height="440">
+        </div>
+        <div class="about__video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <img src="img/about-video-cover.jpg" srcset="img/about-video-cover@2x.jpg 2x" alt="Вид тренажерного зала" width="364" height="228">
+          <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_7653_167)" stroke-opacity="0.2" stroke-width="2"/>
+            <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_7653_167)"/>
+            <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white"/>
+            <defs>
+              <linearGradient id="paint0_linear_7653_167" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ED0233"/>
+                <stop offset="1" stop-color="#003EB7"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_7653_167" x1="14" y1="49.52" x2="54.1858" y2="9.18415" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#003D85"/>
+                <stop offset="0.885417" stop-color="#B80027"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
       </div>
     </section>
   </main>
