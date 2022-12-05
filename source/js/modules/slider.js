@@ -1,6 +1,7 @@
 import '../vendor/swiper.js';
 
 let coachSlider;
+let reviewsSlider;
 
 const startSliders = () => {
   if (document.querySelector('.coachs__slider')) {
@@ -36,6 +37,17 @@ const startSliders = () => {
       },
     });
   }
+
+  if (document.querySelector('.reviews__slider')) {
+    coachSlider = new window.Swiper('.reviews__slider', {
+      speed: 400,
+      navigation: {
+        nextEl: '.reviews__slider-button-next',
+        prevEl: '.reviews__slider-button-prev',
+      },
+      watchOverflow: true,
+    });
+  }
 };
 
-export {coachSlider, startSliders};
+export {coachSlider, reviewsSlider, startSliders};
