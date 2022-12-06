@@ -138,6 +138,10 @@
   @include vp-1199 {
     left: -2px;
   }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
 }
 
 .reviews__slider-button-next {
@@ -145,5 +149,9 @@
 
   @include vp-1199 {
     right: -2px;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
   }
 }

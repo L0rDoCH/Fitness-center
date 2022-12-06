@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {initVideo} from './modules/start-video';
 import {changeTab} from './modules/tabs.js';
 import {startSliders} from './modules/slider.js';
+import {form} from './modules/form.js';
 
 
 // ---------------------------------
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initVideo();
   changeTab();
   startSliders();
+  form();
 
   // Modules
   // ---------------------------------
