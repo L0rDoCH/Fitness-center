@@ -20,9 +20,9 @@
     }
   }
 
-  b {
+  h3 {
     display: block;
-    margin-bottom: 39px;
+    margin: 0 0 39px;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -57,7 +57,7 @@
 .about__wrapper {
   position: relative;
   display: grid;
-  grid-template-columns:1fr 723px;
+  grid-template-columns: 1fr 723px;
   margin-top: 120px;
   margin-bottom: 262px;
 

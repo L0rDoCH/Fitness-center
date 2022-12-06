@@ -1578,7 +1578,7 @@ button,
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 
-.header h2 {
+.header h3 {
   margin: 0 0 48px 17px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
@@ -1589,7 +1589,7 @@ button,
   text-transform: uppercase;
 }
 
-.header h3 {
+.header h2 {
   margin: 43px 50px 14px 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
@@ -1694,9 +1694,9 @@ button,
   letter-spacing: 0.03em;
 }
 
-.about b {
+.about h3 {
   display: block;
-  margin-bottom: 39px;
+  margin: 0 0 39px;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -1933,7 +1933,21 @@ button,
   z-index: 0;
 }
 
-.subscription__tab-item h3 {
+.subscription__tab-item dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.subscription__tab-item dt {
   margin: 0 0 10px;
   font-weight: 700;
   font-size: 26px;
@@ -1941,15 +1955,15 @@ button,
   z-index: 1;
 }
 
-.subscription__tab-item p {
+.subscription__tab-item dd {
   margin: 0 0 83px;
   color: #495a7d;
   z-index: 1;
 }
 
-.subscription__tab-item b {
+.subscription__tab-item p {
   position: relative;
-  margin-bottom: 58px;
+  margin: 0 0 58px;
   font-weight: 700;
   font-size: 60px;
   line-height: 42px;
@@ -1957,7 +1971,7 @@ button,
   z-index: 0;
 }
 
-.subscription__tab-item b::before {
+.subscription__tab-item p::before {
   content: attr(data-text);
   position: absolute;
   bottom: 11px;
@@ -2028,13 +2042,13 @@ button,
   padding-right: 3px;
 }
 
-.promo dd {
+.promo dt {
   margin: 0 0 3px;
   font-size: 18px;
   line-height: 150%;
 }
 
-.promo dt {
+.promo dd {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2042,7 +2056,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 18px;
+  margin: 0 0 18px;
   font-weight: 700;
   font-size: 40px;
   line-height: 115%;
@@ -2257,8 +2271,8 @@ button,
 .advantages__content-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 6fr 4.235fr 6fr;
-  grid-template-columns: 6fr 4.235fr 6fr;
+  -ms-grid-columns: 6fr 4.24fr 6fr;
+  grid-template-columns: 6fr 4.24fr 6fr;
   gap: 0 60px;
   padding: 0 60px;
 }
@@ -2282,7 +2296,7 @@ button,
   padding-bottom: 0;
 }
 
-.advantages__list dd {
+.advantages__list dt {
   margin: 0 31px 0 0;
   font-size: 14px;
   line-height: 150%;
@@ -2295,21 +2309,22 @@ button,
   font-size: 71px;
   line-height: 92%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   background-image: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
   background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
 }
 
-.advantages__list dt {
+.advantages__list dd {
   display: block;
   font-weight: 300;
   line-height: 140%;
+  margin: 0;
   padding-right: 5px;
 }
 
-.advantages__list b {
-  display: block;
-  margin-bottom: 8px;
+.advantages__list p {
+  margin: 0 0 8px;
   font-weight: 700;
   font-size: 22px;
   line-height: 150%;
@@ -2339,7 +2354,7 @@ button,
   border: none;
 }
 
-.advantages__list--center dd {
+.advantages__list--center dt {
   display: block;
   width: 100%;
   margin: 0;
@@ -2363,9 +2378,10 @@ button,
   -webkit-text-fill-color: initial;
 }
 
-.advantages__list--center dt {
+.advantages__list--center dd {
   display: block;
   width: 100%;
+  margin: 0;
   padding: 0 13px 57px;
   font-weight: 400;
   line-height: 150%;
@@ -2650,14 +2666,14 @@ button,
     background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
-  .header h2 {
+  .header h3 {
     margin: 0 0 36px 25px;
     font-size: 72px;
     line-height: 86px;
     text-transform: none;
   }
 
-  .header h3 {
+  .header h2 {
     margin: 28px 4px 7px 0;
     font-size: 34px;
     line-height: 41px;
@@ -2724,7 +2740,7 @@ button,
     line-height: 50px;
   }
 
-  .about b {
+  .about h3 {
     margin-bottom: 35px;
   }
 
@@ -2852,12 +2868,12 @@ button,
     padding-right: 2px;
   }
 
-  .promo dd {
+  .promo dt {
     font-size: 12px;
     margin-bottom: 1px;
   }
 
-  .promo dt {
+  .promo dd {
     margin-bottom: 3px;
     font-size: 24px;
     line-height: 128%;
@@ -2968,7 +2984,7 @@ button,
     padding: 0;
   }
 
-  .advantages__list dd {
+  .advantages__list dt {
     margin-right: 30px;
   }
 
@@ -2977,7 +2993,7 @@ button,
     line-height: 90%;
   }
 
-  .advantages__list b {
+  .advantages__list p {
     margin-top: -3px;
     margin-bottom: 2px;
     font-size: 20px;
@@ -2991,7 +3007,7 @@ button,
     padding: 0 118px;
   }
 
-  .advantages__list--center dd {
+  .advantages__list--center dt {
     margin: 0;
     padding: 37px 10px 13px;
     font-size: 22px;
@@ -3002,7 +3018,7 @@ button,
     font-size: 74px;
   }
 
-  .advantages__list--center dt {
+  .advantages__list--center dd {
     padding: 0 113px 38px;
   }
 
@@ -3089,11 +3105,11 @@ button,
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
-  .header h2 {
+  .header h3 {
     margin: 0 0 22px 0;
   }
 
-  .header h3 {
+  .header h2 {
     margin: 29px 3px 14px 0;
     font-size: 28px;
     line-height: 34px;
@@ -3155,7 +3171,7 @@ button,
     line-height: 38px;
   }
 
-  .about b {
+  .about h3 {
     margin-bottom: 24px;
   }
 
@@ -3236,24 +3252,24 @@ button,
     padding: 43px 0 48px;
   }
 
-  .subscription__tab-item h3 {
+  .subscription__tab-item dt {
     margin-bottom: 9px;
     font-size: 22px;
     line-height: 24px;
   }
 
-  .subscription__tab-item p {
+  .subscription__tab-item dd {
     margin-bottom: 69px;
   }
 
-  .subscription__tab-item b {
+  .subscription__tab-item p {
     margin-left: 7px;
     margin-bottom: 48px;
     font-size: 48px;
     line-height: 33px;
   }
 
-  .subscription__tab-item b::before {
+  .subscription__tab-item p::before {
     font-size: 80px;
     line-height: 55px;
   }
@@ -3371,12 +3387,12 @@ button,
     padding: 0 46px;
   }
 
-  .advantages__list dd {
+  .advantages__list dt {
     margin: 0 0 8px;
     text-align: center;
   }
 
-  .advantages__list dt {
+  .advantages__list dd {
     padding: 0;
     text-align: center;
   }
@@ -3388,7 +3404,7 @@ button,
     padding: 0;
   }
 
-  .advantages__list--center dd {
+  .advantages__list--center dt {
     margin: 6px 0 0;
     padding: 42px 10px 7px;
     line-height: 149%;
@@ -3398,7 +3414,7 @@ button,
     padding-bottom: 0;
   }
 
-  .advantages__list--center dt {
+  .advantages__list--center dd {
     margin-bottom: 7px;
     padding: 0 52px 43px;
   }
