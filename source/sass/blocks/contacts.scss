@@ -239,7 +239,7 @@
     gap: 0;
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     width: 1px;

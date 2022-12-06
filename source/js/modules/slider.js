@@ -5,6 +5,10 @@ let reviewsSlider;
 
 const startSliders = () => {
   if (document.querySelector('.coachs__slider')) {
+    const coachsWrapper = document.querySelector('.coachs__swiper-wrapper');
+
+    coachsWrapper.classList.add('swiper-wrapper');
+
     coachSlider = new window.Swiper('.coachs__slider', {
       speed: 400,
       navigation: {
@@ -39,6 +43,10 @@ const startSliders = () => {
   }
 
   if (document.querySelector('.reviews__slider')) {
+    const reviewsWrapper = document.querySelector('.reviews__swiper-wrapper');
+
+    reviewsWrapper.classList.add('swiper-wrapper');
+
     coachSlider = new window.Swiper('.reviews__slider', {
       speed: 400,
       navigation: {

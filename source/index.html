@@ -5,8 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Сайт фитнес центра Supergym">
-  <title>ProjectName</title>
+  <title>Фитнес центр Supergym</title>
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="js/main.min.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans-extra-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans-semi-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/rouble.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml"> <!--svg-->
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
 </head>
 <body>
 <div class="wrapper">
@@ -30,7 +43,10 @@
           </div>
           <a href="#subscription" class="btn header__btn">Купить абонемент</a>
         </div>
-        <img class="header__img" src="img/top.jpg" srcset="img/top@2x.jpg 2x" width="500" height="556" alt="Мужчина в тени в костюме супермена">
+        <picture>
+          <source srcset="img/top.webp 1x, img/top@2x.webp 2x" type="image/webp">
+          <img class="header__img" src="img/top.jpg" srcset="img/top@2x.jpg 2x" width="500" height="556" alt="Мужчина в тени в костюме супермена" loading="lazy">
+        </picture>
       </div>
     </div>
   </header>
@@ -45,10 +61,16 @@
           <p class="about__on-desktop">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
         <div class="about__img-wrapper">
-          <img class="about__img" src="img/about.jpg" srcset="img/about@2x.jpg 2x" alt="Вид тренажерного зала" width="660" height="440">
+          <picture>
+            <source srcset="img/about.webp 1x, img/about@2x.webp 2x" type="image/webp">
+            <img class="about__img" src="img/about.jpg" srcset="img/about@2x.jpg 2x" alt="Вид тренажерного зала" width="660" height="440" loading="lazy">
+          </picture>
         </div>
         <div class="about__video" data-video-src="https://www.youtube.com/embed/9TZXsZItgdw">
-          <img src="img/about-video-cover.jpg" srcset="img/about-video-cover@2x.jpg 2x" alt="Вид тренажерного зала" width="364" height="228">
+          <picture>
+            <source srcset="img/about-video-cover.webp 1x, img/about-video-cover@2x.webp 2x" type="image/webp">
+            <img src="img/about-video-cover.jpg" srcset="img/about-video-cover@2x.jpg 2x" alt="Вид тренажерного зала" width="364" height="228" loading="lazy">
+          </picture>
           <button>
             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_7653_167)" stroke-opacity="0.2" stroke-width="2"/>
@@ -163,7 +185,10 @@
           </li>
         </ul>
       </div>
-      <img class="subscription__img" src="img/subscription.png" srcset="img/subscription@2x.png" alt="Розовые блины для штанги" width="470" height="494">
+      <picture>
+        <source srcset="img/subscription.webp 1x, img/subscription@2x.webp 2x" type="image/webp">
+        <img class="subscription__img" src="img/subscription.png" srcset="img/subscription@2x.png" alt="Розовые блины для штанги" width="470" height="494" loading="lazy">
+      </picture>
     </section>
 
     <section class="promo">
@@ -181,14 +206,17 @@
           <p>Ежегодные соревнования по CrossFit</p>
           <a class="btn promo__btn" href="#">заполнить заявку</a>
         </div>
-        <img class="promo__img" src="img/promo.jpg" srcset="img/promo@2x.jpg 2x" alt="Спортсмен в пыли магнезии" width="660" height="500">
+        <picture>
+          <source srcset="img/promo.webp 1x, img/promo@2x.webp 2x" type="image/webp">
+          <img class="promo__img" src="img/promo.jpg" srcset="img/promo@2x.jpg 2x" alt="Спортсмен в пыли магнезии" width="660" height="500" loading="lazy">
+        </picture>
       </div>
     </section>
 
-    <section class="coachs">
+    <section class="coachs" id="coachs">
       <h2>Тренеры</h2>
       <div class="swiper coachs__slider">
-        <div class="swiper-wrapper">
+        <div class="coachs__swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide coachs__slide">
             <div class="coachs__slide-wrapper">
@@ -201,7 +229,10 @@
                   <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
               </div>
-              <img src="img/coachs/coach-1.jpg" srcset="img/coachs/coach-1@2x.jpg" alt="Фото тренера" width="260" height="294">
+              <picture>
+                <source srcset="img/coachs/coach-1.webp 1x, img/coachs/coach-1@2x.webp 2x" type="image/webp">
+                <img src="img/coachs/coach-1.jpg" srcset="img/coachs/coach-1@2x.jpg" alt="Фото тренера" width="260" height="294" loading="lazy">
+              </picture>
             </div>
           </div>
           <div class="swiper-slide coachs__slide">
@@ -215,7 +246,10 @@
                   <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
               </div>
-              <img src="img/coachs/coach-2.jpg" srcset="img/coachs/coach-2@2x.jpg" alt="Фото тренера" width="260" height="294">
+              <picture>
+                <source srcset="img/coachs/coach-2.webp 1x, img/coachs/coach-2@2x.webp 2x" type="image/webp">
+                <img src="img/coachs/coach-2.jpg" srcset="img/coachs/coach-2@2x.jpg" alt="Фото тренера" width="260" height="294" loading="lazy">
+              </picture>
             </div>
           </div>
           <div class="swiper-slide coachs__slide">
@@ -229,7 +263,10 @@
                   <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
               </div>
-              <img src="img/coachs/coach-3.jpg" srcset="img/coachs/coach-3@2x.jpg" alt="Фото тренера" width="260" height="294">
+              <picture>
+                <source srcset="img/coachs/coach-3.webp 1x, img/coachs/coach-3@2x.webp 2x" type="image/webp">
+                <img src="img/coachs/coach-3.jpg" srcset="img/coachs/coach-3@2x.jpg" alt="Фото тренера" width="260" height="294" loading="lazy">
+              </picture>
             </div>
           </div>
           <div class="swiper-slide coachs__slide">
@@ -243,7 +280,10 @@
                   <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
               </div>
-              <img src="img/coachs/coach-4.jpg" srcset="img/coachs/coach-4@2x.jpg" alt="Фото тренера" width="260" height="294">
+              <picture>
+                <source srcset="img/coachs/coach-4.webp 1x, img/coachs/coach-4@2x.webp 2x" type="image/webp">
+                <img src="img/coachs/coach-4.jpg" srcset="img/coachs/coach-4@2x.jpg" alt="Фото тренера" width="260" height="294" loading="lazy">
+              </picture>
             </div>
           </div>
           <div class="swiper-slide coachs__slide">
@@ -257,7 +297,10 @@
                   <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
               </div>
-              <img src="img/coachs/coach-4.jpg" srcset="img/coachs/coach-4@2x.jpg" alt="Фото тренера" width="260" height="294">
+              <picture>
+                <source srcset="img/coachs/coach-4.webp 1x, img/coachs/coach-4@2x.webp 2x" type="image/webp">
+                <img src="img/coachs/coach-4.jpg" srcset="img/coachs/coach-4@2x.jpg" alt="Фото тренера" width="260" height="294" loading="lazy">
+              </picture>
             </div>
           </div>
           <div class="swiper-slide coachs__slide">
@@ -271,7 +314,10 @@
                   <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
               </div>
-              <img src="img/coachs/coach-4.jpg" srcset="img/coachs/coach-4@2x.jpg" alt="Фото тренера" width="260" height="294">
+              <picture>
+                <source srcset="img/coachs/coach-4.webp 1x, img/coachs/coach-4@2x.webp 2x" type="image/webp">
+                <img src="img/coachs/coach-4.jpg" srcset="img/coachs/coach-4@2x.jpg" alt="Фото тренера" width="260" height="294" loading="lazy">
+              </picture>
             </div>
           </div>
           <div class="swiper-slide coachs__slide">
@@ -285,7 +331,10 @@
                   <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
               </div>
-              <img src="img/coachs/coach-4.jpg" srcset="img/coachs/coach-4@2x.jpg" alt="Фото тренера" width="260" height="294">
+              <picture>
+                <source srcset="img/coachs/coach-4.webp 1x, img/coachs/coach-4@2x.webp 2x" type="image/webp">
+                <img src="img/coachs/coach-4.jpg" srcset="img/coachs/coach-4@2x.jpg" alt="Фото тренера" width="260" height="294" loading="lazy">
+              </picture>
             </div>
           </div>
           <div class="swiper-slide coachs__slide">
@@ -299,7 +348,10 @@
                   <li>Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
               </div>
-              <img src="img/coachs/coach-4.jpg" srcset="img/coachs/coach-4@2x.jpg" alt="Фото тренера" width="260" height="294">
+              <picture>
+                <source srcset="img/coachs/coach-4.webp 1x, img/coachs/coach-4@2x.webp 2x" type="image/webp">
+                <img src="img/coachs/coach-4.jpg" srcset="img/coachs/coach-4@2x.jpg" alt="Фото тренера" width="260" height="294" loading="lazy">
+              </picture>
             </div>
           </div>
         </div>
@@ -336,7 +388,7 @@
       </div>
     </section>
 
-    <section class="events">
+    <section class="events" id="events">
       <div class="events__wrapper container">
         <h2>Акции</h2>
         <div class="events__content-wrapper">
@@ -349,7 +401,10 @@
               </div>
               <a href="#"><span>подробнее</span></a>
             </div>
-            <img src="img/events1.jpg" srcset="img/events1@2x.jpg" alt="Спортивная девушка на фоне неба" width="399" height="505">
+            <picture>
+              <source srcset="img/events1.webp 1x, img/events1@2x.webp 2x" type="image/webp">
+              <img src="img/events1.jpg" srcset="img/events1@2x.jpg" alt="Спортивная девушка на фоне неба" width="399" height="505" loading="lazy">
+            </picture>
           </div>
           <div class="events__cards-wrapper">
             <div class="events__card">
@@ -376,15 +431,21 @@
         <h2>Отзывы</h2>
         <div class="reviews__slider-wrapper">
           <div class="swiper reviews__slider">
-            <div class="swiper-wrapper">
+            <div class="reviews__swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide reviews__slide">
-                <img src="img/reviews/review-1.png" srcset="img/reviews/review-1@2x.png" alt="Фото клиента" width="80" height="80">
+                <picture>
+                  <source srcset="img/reviews/review-1.webp 1x, img/reviews/review-1@2x.webp 2x" type="image/webp">
+                  <img src="img/reviews/review-1.png" srcset="img/reviews/review-1@2x.png" alt="Фото клиента" width="80" height="80" loading="lazy">
+                </picture>
                 <h3>Анна Орлова</h3>
                 <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
               </div>
               <div class="swiper-slide reviews__slide">
-                <img src="img/reviews/review-1.png" srcset="img/reviews/review-1@2x.png" alt="Фото клиента" width="80" height="80">
+                <picture>
+                  <source srcset="img/reviews/review-1.webp 1x, img/reviews/review-1@2x.webp 2x" type="image/webp">
+                  <img src="img/reviews/review-1.png" srcset="img/reviews/review-1@2x.png" alt="Фото клиента" width="80" height="80" loading="lazy">
+                </picture>
                 <h3>Анна Орлова</h3>
                 <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
               </div>
@@ -445,8 +506,56 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="container"></div>
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item footer__nav-item--logo">
+            <a class="footer__nav-link footer__nav-link--logo" href="#">
+              <svg width="87" height="32">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Услуги</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#subscription">Абонементы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#events">Акции</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#coachs">Тренеры</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Расписание</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="footer__social social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Мы в Вконтакте</span>
+          <svg width="25" height="25">
+            <use xlink:href="img/sprite.svg#vk-logo"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Мы в Одноклассниках</span>
+          <svg width="25" height="25">
+            <use xlink:href="img/sprite.svg#ok-logo"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Мы на Реддит</span>
+          <svg width="25" height="25">
+            <use xlink:href="img/sprite.svg#reddit-logo"></use>
+          </svg>
+        </a>
+      </section>
+    </div>
   </footer>
 </div>
 
