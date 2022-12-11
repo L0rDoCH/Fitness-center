@@ -2232,7 +2232,8 @@ button,
   font-size: 24px;
 }
 
-.coachs__slide-content-wrapper:hover {
+.coachs__slide-content-wrapper:hover,
+.coachs__slide-content-wrapper:focus-visible {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -2242,11 +2243,14 @@ button,
 }
 
 .coachs__slide-content-wrapper:hover p,
-.coachs__slide-content-wrapper:hover ul {
+.coachs__slide-content-wrapper:hover ul,
+.coachs__slide-content-wrapper:focus-visible p,
+.coachs__slide-content-wrapper:focus-visible ul {
   display: block;
 }
 
-.coachs__slide-content-wrapper:hover h3 {
+.coachs__slide-content-wrapper:hover h3,
+.coachs__slide-content-wrapper:focus-visible h3 {
   margin: 52px 0 0;
 }
 
@@ -3264,7 +3268,8 @@ button,
     margin-right: 8px;
   }
 
-  .coachs__slide-content-wrapper:hover h3 {
+  .coachs__slide-content-wrapper:hover h3,
+  .coachs__slide-content-wrapper:focus-visible h3 {
     margin-right: 9px;
   }
 
@@ -3747,7 +3752,8 @@ button,
     padding-left: 30px;
   }
 
-  .coachs__slide-content-wrapper:hover h3 {
+  .coachs__slide-content-wrapper:hover h3,
+  .coachs__slide-content-wrapper:focus-visible h3 {
     margin-top: 42px;
     margin-right: 0;
   }

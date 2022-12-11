@@ -3,6 +3,35 @@ import '../vendor/swiper.js';
 let coachSlider;
 let reviewsSlider;
 
+const addFocusOnSlide = () => {
+  const slider = document.querySelector('.coachs__slider');
+  const slides = slider.querySelectorAll('.swiper-slide');
+
+  slides.forEach((slide) => {
+    if (!slide.classList.contains('swiper-slide-visible')) {
+      slide.childNodes.forEach((child) => {
+        child.childNodes.forEach((element) => {
+          if (element.nodeName === 'DIV') {
+            if (element.hasAttribute('tabindex')) {
+              element.removeAttribute('tabindex');
+            }
+          }
+        });
+      });
+    } else {
+      slide.childNodes.forEach((child) => {
+        child.childNodes.forEach((element) => {
+          if (element.nodeName === 'DIV') {
+            if (!element.hasAttribute('tabindex')) {
+              element.setAttribute('tabindex', 0);
+            }
+          }
+        });
+      });
+    }
+  });
+};
+
 const startSliders = () => {
   if (document.querySelector('.coachs__slider')) {
     const coachsWrapper = document.querySelector('.coachs__swiper-wrapper');
@@ -40,6 +69,12 @@ const startSliders = () => {
         },
       },
     });
+
+    coachSlider.on('slideChange', () => {
+      addFocusOnSlide();
+    });
+
+    addFocusOnSlide();
   }
 
   if (document.querySelector('.reviews__slider')) {

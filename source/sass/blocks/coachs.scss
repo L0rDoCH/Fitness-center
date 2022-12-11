@@ -135,7 +135,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     justify-content: flex-start;
     background-color: transparentize($color-sapphire, 0.11);
     box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
