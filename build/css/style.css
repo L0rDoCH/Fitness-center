@@ -2156,6 +2156,13 @@ button,
   color: #102654;
 }
 
+.coachs__swiper-wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px 0;
+}
+
 .coachs__slide-wrapper {
   position: relative;
   width: 260px;
@@ -2256,6 +2263,7 @@ button,
 
 .coachs__slider-button-prev,
 .coachs__slider-button-next {
+  display: none;
   top: 65%;
   width: 18px;
   height: 34px;
@@ -2617,6 +2625,12 @@ button,
   max-width: 560px;
 }
 
+.reviews__swiper-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+}
+
 .reviews__slide {
   display: -ms-grid;
   display: grid;
@@ -2658,6 +2672,7 @@ button,
 
 .reviews__slider-button-prev,
 .reviews__slider-button-next {
+  display: none;
   top: 52%;
   width: 18px;
   height: 34px;
@@ -3254,6 +3269,11 @@ button,
     text-align: center;
   }
 
+  .coachs__swiper-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(283px, 1fr));
+    gap: 30px 0;
+  }
+
   .coachs__slide-wrapper {
     width: 268px;
     height: 294px;
@@ -3735,6 +3755,11 @@ button,
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 42px;
+  }
+
+  .coachs__swiper-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+    gap: 30px;
   }
 
   .coachs__slide-wrapper {

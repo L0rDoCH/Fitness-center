@@ -42,6 +42,22 @@
   }
 }
 
+.coachs__swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px 0;
+
+  @include vp-1199 {
+    grid-template-columns: repeat(auto-fit, minmax(283px, 1fr));
+    gap: 30px 0;
+  }
+
+  @include vp-767 {
+    grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+    gap: 30px;
+  }
+}
+
 .coachs__slide-wrapper {
   position: relative;
   width: 260px;
@@ -163,6 +179,7 @@
 
 .coachs__slider-button-prev,
 .coachs__slider-button-next {
+  display: none;
   top: 65%;
   width: 18px;
   height: 34px;

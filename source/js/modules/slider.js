@@ -35,8 +35,13 @@ const addFocusOnSlide = () => {
 const startSliders = () => {
   if (document.querySelector('.coachs__slider')) {
     const coachsWrapper = document.querySelector('.coachs__swiper-wrapper');
+    const coachsButtonPrev = document.querySelector('.coachs__slider-button-prev');
+    const coachsButtonNext = document.querySelector('.coachs__slider-button-next');
 
     coachsWrapper.classList.add('swiper-wrapper');
+    coachsWrapper.classList.remove('coachs__swiper-wrapper');
+    coachsButtonPrev.style.display = 'block';
+    coachsButtonNext.style.display = 'block';
 
     coachSlider = new window.Swiper('.coachs__slider', {
       speed: 400,
@@ -79,8 +84,14 @@ const startSliders = () => {
 
   if (document.querySelector('.reviews__slider')) {
     const reviewsWrapper = document.querySelector('.reviews__swiper-wrapper');
+    const reviewsButtonPrev = document.querySelector('.reviews__slider-button-prev');
+    const reviewsButtonNext = document.querySelector('.reviews__slider-button-next');
 
     reviewsWrapper.classList.add('swiper-wrapper');
+    reviewsWrapper.classList.remove('reviews__swiper-wrapper');
+    reviewsButtonPrev.style.display = 'block';
+    reviewsButtonNext.style.display = 'block';
+
 
     coachSlider = new window.Swiper('.reviews__slider', {
       speed: 400,

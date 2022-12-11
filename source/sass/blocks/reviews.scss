@@ -52,6 +52,12 @@
   }
 }
 
+.reviews__swiper-wrapper {
+  display: grid;
+  gap: 30px;
+}
+
+
 .reviews__slide {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -120,6 +126,7 @@
 
 .reviews__slider-button-prev,
 .reviews__slider-button-next {
+  display: none;
   top: 52%;
   width: 18px;
   height: 34px;
