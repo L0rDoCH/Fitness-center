@@ -29,6 +29,7 @@
     @include vp-767 {
       margin-bottom: 42px;
       padding-right: 5px;
+      align-self: center;
       font-size: 32px;
       line-height: 38px;
     }
@@ -39,6 +40,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include vp-767 {
+    align-items: initial;
+  }
 }
 
 .events__content-wrapper {

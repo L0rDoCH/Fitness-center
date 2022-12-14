@@ -1257,10 +1257,10 @@ button.swiper-pagination-bullet {
 
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "Rouble";
+  font-weight: 700;
+  font-family: "Helvetica Neue";
   font-display: swap;
-  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff");
+  src: url("../fonts/helvetica-neue-bold.woff2") format("woff2"), url("../fonts/helvetica-neue-bold.woff") format("woff");
 }
 
 @font-face {
@@ -1725,7 +1725,7 @@ button,
   -ms-grid-columns: 1fr 723px;
   grid-template-columns: 1fr 723px;
   margin-top: 120px;
-  margin-bottom: 262px;
+  margin-bottom: 235px;
 }
 
 .about__text-wrapper {
@@ -1750,7 +1750,7 @@ button,
   position: absolute;
   width: 364px;
   height: 228px;
-  bottom: -115px;
+  top: 288px;
   right: 399px;
   cursor: pointer;
 }
@@ -1971,7 +1971,7 @@ button,
 }
 
 .subscription__tab-item dd {
-  margin: 0 0 83px;
+  margin: 0 0 89px;
   color: #495a7d;
   z-index: 1;
 }
@@ -1999,7 +1999,7 @@ button,
 }
 
 .subscription__tab-item span {
-  font-family: "Rouble", "Arial", sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
   color: #102654;
   font-weight: 700;
 }
@@ -2043,7 +2043,7 @@ button,
 
 .promo h2 {
   margin: 4px 0 0 3px;
-  padding-right: 52px;
+  padding-left: 10px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 82px;
@@ -2110,8 +2110,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 500px;
-  overflow-y: auto;
   padding: 82px 76px 85px;
   color: #ffffff;
   background-color: #ed0233;
@@ -2121,6 +2119,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -2673,7 +2674,7 @@ button,
 .reviews__slider-button-prev,
 .reviews__slider-button-next {
   display: none;
-  top: 52%;
+  top: 127px;
   width: 18px;
   height: 34px;
 }
@@ -3101,7 +3102,7 @@ button,
     -ms-flex-align: center;
     align-items: center;
     margin-top: 100px;
-    margin-bottom: 204px;
+    margin-bottom: 183px;
   }
 
   .about__text-wrapper {
@@ -3141,6 +3142,7 @@ button,
   .about__video {
     width: 266px;
     height: 167px;
+    top: auto;
     bottom: -83px;
     right: calc(32% + 5px);
   }
@@ -3200,7 +3202,7 @@ button,
   .promo h2 {
     font-size: 48px;
     margin-left: 6px;
-    padding-right: 35px;
+    padding: 0;
   }
 
   .promo dl {
@@ -3239,14 +3241,7 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: auto;
     padding: 47px 44px 50px;
-  }
-
-  .promo__date-wrapper {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
 
   .promo__btn {
@@ -3424,8 +3419,12 @@ button,
     line-height: 50px;
   }
 
+  .reviews__slider-wrapper {
+    padding: 0 56px;
+  }
+
   .reviews__slider {
-    max-width: 566px;
+    max-width: none;
   }
 
   .reviews__slide {
@@ -3623,7 +3622,7 @@ button,
 
   .about__wrapper {
     margin-top: 64px;
-    margin-bottom: 88px;
+    margin-bottom: 70px;
     padding: 0;
   }
 
@@ -3680,6 +3679,7 @@ button,
   }
 
   .subscription__tab-title-item button {
+    margin: 0;
     padding: 0 0 14px;
     font-size: 16px;
   }
@@ -3699,7 +3699,7 @@ button,
   }
 
   .subscription__tab-item dd {
-    margin-bottom: 69px;
+    margin-bottom: 75px;
   }
 
   .subscription__tab-item p {
@@ -3728,8 +3728,8 @@ button,
   }
 
   .promo__wrapper {
-    -ms-grid-columns: minmax(10px, 442px);
-    grid-template-columns: minmax(10px, 442px);
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -3875,8 +3875,17 @@ button,
   .events h2 {
     margin-bottom: 42px;
     padding-right: 5px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     font-size: 32px;
     line-height: 38px;
+  }
+
+  .events__wrapper {
+    -webkit-box-align: initial;
+    -ms-flex-align: initial;
+    align-items: initial;
   }
 
   .events__main-card-wrapper {
@@ -3960,8 +3969,8 @@ button,
     line-height: 38px;
   }
 
-  .reviews__slider {
-    max-width: 226px;
+  .reviews__slider-wrapper {
+    padding: 0 32px;
   }
 
   .reviews__slide {
@@ -3996,7 +4005,7 @@ button,
 
   .reviews__slider-button-prev,
   .reviews__slider-button-next {
-    top: 53.5%;
+    top: 180px;
     width: 12px;
     height: 21px;
   }

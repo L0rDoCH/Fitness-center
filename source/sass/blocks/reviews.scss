@@ -38,17 +38,21 @@
 
 .reviews__slider-wrapper {
   position: relative;
+
+  @include vp-1199 {
+    padding: 0 56px;
+  }
+
+  @include vp-767 {
+    padding: 0 32px;
+  }
 }
 
 .reviews__slider {
   max-width: 560px;
 
   @include vp-1199 {
-    max-width: 566px;
-  }
-
-  @include vp-767 {
-    max-width: 226px;
+    max-width: none;
   }
 }
 
@@ -127,12 +131,12 @@
 .reviews__slider-button-prev,
 .reviews__slider-button-next {
   display: none;
-  top: 52%;
+  top: 127px;
   width: 18px;
   height: 34px;
 
   @include vp-767 {
-    top: 53.5%;
+    top: 180px;
     width: 12px;
     height: 21px;
   }
